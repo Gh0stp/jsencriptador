@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+           <a href="index.html"><img src="/assets/logo.png" alt=""></a> 
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="encriptador">
+                <textarea class="text" id="textoEntrada" placeholder="Escribe un texto acá"></textarea>
+                <div class="botones">
+                    <button onclick="encriptarTexto()" class="btnencriptar">Encripta</button>
+                    <button onclick="desencriptarTexto()" class="btndesencriptar">Desencripta</button>
+                </div>
+            </div>
+            <div class="seccion-salida">
+                <div class="boton-salida">
+                    <button onclick="copyToClipboard()">Copiar</button>
+                </div>
+                <div class="salida-texto">
+                    <textarea class="text" id="textoSalida" readonly></textarea>
+                </div>
+                <img class="imagen" src="assets/images.png">
+            </div>
+        </div>
+        <script src="/js/js.js"></script>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Bryan Alejandro Martinez Perez</p>
+    </footer>
+</body>
+</html>
